@@ -1,0 +1,22 @@
+div{
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+embed{
+    /* background: red; */
+    border: 1px solid black;
+    width: 60%;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
+
+iframe{
+    border: 1px solid black;
+    width: 60%;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
