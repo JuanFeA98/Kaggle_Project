@@ -14024,7 +14024,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.">1.<a class="anchor-link" href="#1.">&#182;</a></h2><p>In the cell below, create a DataFrame <code>fruits</code> that looks like this:</p>
+<h3 id="1.">1.<a class="anchor-link" href="#1.">&#182;</a></h3><p>In the cell below, create a DataFrame <code>fruits</code> that looks like this:</p>
 <p><img src="https://i.imgur.com/Ax3pp2A.png" alt=""></p>
 
 </div>
@@ -14098,7 +14098,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.">2.<a class="anchor-link" href="#2.">&#182;</a></h2><p>Create a dataframe <code>fruit_sales</code> that matches the diagram below:</p>
+<h3 id="2.">2.<a class="anchor-link" href="#2.">&#182;</a></h3><p>Create a dataframe <code>fruit_sales</code> that matches the diagram below:</p>
 <p><img src="https://i.imgur.com/CHPn7ZF.png" alt=""></p>
 
 </div>
@@ -14177,7 +14177,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3.">3.<a class="anchor-link" href="#3.">&#182;</a></h2><p>Create a variable <code>ingredients</code> with a Series that looks like:</p>
+<h3 id="3.">3.<a class="anchor-link" href="#3.">&#182;</a></h3><p>Create a variable <code>ingredients</code> with a Series that looks like:</p>
 
 <pre><code>Flour     4 cups
 Milk       1 cup
@@ -14231,7 +14231,7 @@ Name: Dinner, dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.">4.<a class="anchor-link" href="#4.">&#182;</a></h2><p>Read a csv dataset into a DataFrame called <code>movies</code>:</p>
+<h3 id="4.">4.<a class="anchor-link" href="#4.">&#182;</a></h3><p>Read a csv dataset into a DataFrame called <code>movies</code>:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14475,7 +14475,7 @@ Name: Dinner, dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.">5.<a class="anchor-link" href="#5.">&#182;</a></h2><p>Run the cell below to create and display a DataFrame called <code>animals</code>:</p>
+<h3 id="5.">5.<a class="anchor-link" href="#5.">&#182;</a></h3><p>Run the cell below to create and display a DataFrame called <code>animals</code>:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14568,6 +14568,1896 @@ Name: Dinner, dtype: object</pre>
      </div>
 </div>
 </div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="II.-Indexing,-Selecting-and-assigning">II. Indexing, Selecting and assigning<a class="anchor-link" href="#II.-Indexing,-Selecting-and-assigning">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/wine_reviews.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>description</th>
+      <th>designation</th>
+      <th>points</th>
+      <th>price</th>
+      <th>province</th>
+      <th>region_1</th>
+      <th>region_2</th>
+      <th>taster_name</th>
+      <th>taster_twitter_handle</th>
+      <th>title</th>
+      <th>variety</th>
+      <th>winery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Italy</td>
+      <td>Aromas include tropical fruit, broom, brimston...</td>
+      <td>Vulkà Bianco</td>
+      <td>87</td>
+      <td>NaN</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Etna</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Nicosia 2013 Vulkà Bianco  (Etna)</td>
+      <td>White Blend</td>
+      <td>Nicosia</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Portugal</td>
+      <td>This is ripe and fruity, a wine that is smooth...</td>
+      <td>Avidagos</td>
+      <td>87</td>
+      <td>15.0</td>
+      <td>Douro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Roger Voss</td>
+      <td>@vossroger</td>
+      <td>Quinta dos Avidagos 2011 Avidagos Red (Douro)</td>
+      <td>Portuguese Red</td>
+      <td>Quinta dos Avidagos</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>US</td>
+      <td>Tart and snappy, the flavors of lime flesh and...</td>
+      <td>NaN</td>
+      <td>87</td>
+      <td>14.0</td>
+      <td>Oregon</td>
+      <td>Willamette Valley</td>
+      <td>Willamette Valley</td>
+      <td>Paul Gregutt</td>
+      <td>@paulgwine</td>
+      <td>Rainstorm 2013 Pinot Gris (Willamette Valley)</td>
+      <td>Pinot Gris</td>
+      <td>Rainstorm</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>US</td>
+      <td>Pineapple rind, lemon pith and orange blossom ...</td>
+      <td>Reserve Late Harvest</td>
+      <td>87</td>
+      <td>13.0</td>
+      <td>Michigan</td>
+      <td>Lake Michigan Shore</td>
+      <td>NaN</td>
+      <td>Alexander Peartree</td>
+      <td>NaN</td>
+      <td>St. Julian 2013 Reserve Late Harvest Riesling ...</td>
+      <td>Riesling</td>
+      <td>St. Julian</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>US</td>
+      <td>Much like the regular bottling from 2012, this...</td>
+      <td>Vintner's Reserve Wild Child Block</td>
+      <td>87</td>
+      <td>65.0</td>
+      <td>Oregon</td>
+      <td>Willamette Valley</td>
+      <td>Willamette Valley</td>
+      <td>Paul Gregutt</td>
+      <td>@paulgwine</td>
+      <td>Sweet Cheeks 2012 Vintner's Reserve Wild Child...</td>
+      <td>Pinot Noir</td>
+      <td>Sweet Cheeks</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="1.">1.<a class="anchor-link" href="#1.">&#182;</a></h3><p>Select the <code>description</code> column from <code>reviews</code> and assign the result to the variable <code>desc</code>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">desc</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;description&#39;</span><span class="p">]</span>
+<span class="n">desc</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0         Aromas include tropical fruit, broom, brimston...
+1         This is ripe and fruity, a wine that is smooth...
+2         Tart and snappy, the flavors of lime flesh and...
+3         Pineapple rind, lemon pith and orange blossom ...
+4         Much like the regular bottling from 2012, this...
+                                ...                        
+129966    Notes of honeysuckle and cantaloupe sweeten th...
+129967    Citation is given as much as a decade of bottl...
+129968    Well-drained gravel soil gives this wine its c...
+129969    A dry style of Pinot Gris, this is crisp with ...
+129970    Big, rich and off-dry, this is powered by inte...
+Name: description, Length: 129971, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.">2.<a class="anchor-link" href="#2.">&#182;</a></h2><p>Select the first value from the description column of <code>reviews</code>, assigning it to variable <code>first_description</code>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_description</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">]</span>
+<span class="n">first_description</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#34;Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn&#39;t overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.&#34;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3.">3.<a class="anchor-link" href="#3.">&#182;</a></h3><p>Select the first row of data (the first record) from <code>reviews</code>, assigning it to the variable <code>first_row</code>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_row</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">first_row</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>country                                                              Italy
+description              Aromas include tropical fruit, broom, brimston...
+designation                                                   Vulkà Bianco
+points                                                                  87
+price                                                                  NaN
+province                                                 Sicily &amp; Sardinia
+region_1                                                              Etna
+region_2                                                               NaN
+taster_name                                                  Kerin O’Keefe
+taster_twitter_handle                                         @kerinokeefe
+title                                    Nicosia 2013 Vulkà Bianco  (Etna)
+variety                                                        White Blend
+winery                                                             Nicosia
+Name: 0, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="4.">4.<a class="anchor-link" href="#4.">&#182;</a></h3><p>Select the first 10 values from the <code>description</code> column in <code>reviews</code>, assigning the result to variable <code>first_descriptions</code>.</p>
+<p>Hint: format your output as a pandas Series.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_descriptions</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">first_descriptions</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0    Aromas include tropical fruit, broom, brimston...
+1    This is ripe and fruity, a wine that is smooth...
+2    Tart and snappy, the flavors of lime flesh and...
+3    Pineapple rind, lemon pith and orange blossom ...
+4    Much like the regular bottling from 2012, this...
+5    Blackberry and raspberry aromas show a typical...
+6    Here&#39;s a bright, informal red that opens with ...
+7    This dry and restrained wine offers spice in p...
+8    Savory dried thyme notes accent sunnier flavor...
+9    This has great depth of flavor with its fresh ...
+Name: description, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="5.">5.<a class="anchor-link" href="#5.">&#182;</a></h3><p>Select the records with index labels <code>1</code>, <code>2</code>, <code>3</code>, <code>5</code>, and <code>8</code>, assigning the result to the variable <code>sample_reviews</code>.</p>
+<p>In other words, generate the following DataFrame:</p>
+<p><img src="https://i.imgur.com/sHZvI1O.png" alt=""></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_reviews</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">],:]</span>
+<span class="n">sample_reviews</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>description</th>
+      <th>designation</th>
+      <th>points</th>
+      <th>price</th>
+      <th>province</th>
+      <th>region_1</th>
+      <th>region_2</th>
+      <th>taster_name</th>
+      <th>taster_twitter_handle</th>
+      <th>title</th>
+      <th>variety</th>
+      <th>winery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Portugal</td>
+      <td>This is ripe and fruity, a wine that is smooth...</td>
+      <td>Avidagos</td>
+      <td>87</td>
+      <td>15.0</td>
+      <td>Douro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Roger Voss</td>
+      <td>@vossroger</td>
+      <td>Quinta dos Avidagos 2011 Avidagos Red (Douro)</td>
+      <td>Portuguese Red</td>
+      <td>Quinta dos Avidagos</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>US</td>
+      <td>Tart and snappy, the flavors of lime flesh and...</td>
+      <td>NaN</td>
+      <td>87</td>
+      <td>14.0</td>
+      <td>Oregon</td>
+      <td>Willamette Valley</td>
+      <td>Willamette Valley</td>
+      <td>Paul Gregutt</td>
+      <td>@paulgwine</td>
+      <td>Rainstorm 2013 Pinot Gris (Willamette Valley)</td>
+      <td>Pinot Gris</td>
+      <td>Rainstorm</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>US</td>
+      <td>Pineapple rind, lemon pith and orange blossom ...</td>
+      <td>Reserve Late Harvest</td>
+      <td>87</td>
+      <td>13.0</td>
+      <td>Michigan</td>
+      <td>Lake Michigan Shore</td>
+      <td>NaN</td>
+      <td>Alexander Peartree</td>
+      <td>NaN</td>
+      <td>St. Julian 2013 Reserve Late Harvest Riesling ...</td>
+      <td>Riesling</td>
+      <td>St. Julian</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Spain</td>
+      <td>Blackberry and raspberry aromas show a typical...</td>
+      <td>Ars In Vitro</td>
+      <td>87</td>
+      <td>15.0</td>
+      <td>Northern Spain</td>
+      <td>Navarra</td>
+      <td>NaN</td>
+      <td>Michael Schachner</td>
+      <td>@wineschach</td>
+      <td>Tandem 2011 Ars In Vitro Tempranillo-Merlot (N...</td>
+      <td>Tempranillo-Merlot</td>
+      <td>Tandem</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Germany</td>
+      <td>Savory dried thyme notes accent sunnier flavor...</td>
+      <td>Shine</td>
+      <td>87</td>
+      <td>12.0</td>
+      <td>Rheinhessen</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Anna Lee C. Iijima</td>
+      <td>NaN</td>
+      <td>Heinz Eifel 2013 Shine Gewürztraminer (Rheinhe...</td>
+      <td>Gewürztraminer</td>
+      <td>Heinz Eifel</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="6.">6.<a class="anchor-link" href="#6.">&#182;</a></h3><p>Create a variable <code>df</code> containing the <code>country</code>, <code>province</code>, <code>region_1</code>, and <code>region_2</code> columns of the records with the index labels <code>0</code>, <code>1</code>, <code>10</code>, and <code>100</code>. In other words, generate the following DataFrame:</p>
+<p><img src="https://i.imgur.com/FUCGiKP.png" alt=""></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;province&#39;</span><span class="p">,</span> <span class="s1">&#39;region_1&#39;</span><span class="p">,</span> <span class="s1">&#39;region_2&#39;</span><span class="p">]]</span>
+<span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>province</th>
+      <th>region_1</th>
+      <th>region_2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Italy</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Etna</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Portugal</td>
+      <td>Douro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>US</td>
+      <td>California</td>
+      <td>Napa Valley</td>
+      <td>Napa</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>US</td>
+      <td>New York</td>
+      <td>Finger Lakes</td>
+      <td>Finger Lakes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="7.">7.<a class="anchor-link" href="#7.">&#182;</a></h3><p>Create a variable <code>df</code> containing the <code>country</code> and <code>variety</code> columns of the first 100 records.</p>
+<p>Hint: you may use <code>loc</code> or <code>iloc</code>. When working on the answer this question and the several of the ones that follow, keep the following "gotcha" described in the tutorial:</p>
+<blockquote><p><code>iloc</code> uses the Python stdlib indexing scheme, where the first element of the range is included and the last one excluded. 
+<code>loc</code>, meanwhile, indexes inclusively.</p>
+<p>This is particularly confusing when the DataFrame index is a simple numerical list, e.g. <code>0,...,1000</code>. In this case <code>df.iloc[0:1000]</code> will return 1000 entries, while <code>df.loc[0:1000]</code> return 1001 of them! To get 1000 elements using <code>loc</code>, you will need to go one lower and ask for <code>df.iloc[0:999]</code>.</p>
+</blockquote>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">99</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;variety&#39;</span><span class="p">]]</span>
+<span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>variety</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Italy</td>
+      <td>White Blend</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Portugal</td>
+      <td>Portuguese Red</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>US</td>
+      <td>Pinot Gris</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>US</td>
+      <td>Riesling</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>US</td>
+      <td>Pinot Noir</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>France</td>
+      <td>Gamay</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>France</td>
+      <td>Gamay</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>US</td>
+      <td>Riesling</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>Italy</td>
+      <td>Sangiovese</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>US</td>
+      <td>Bordeaux-style Red Blend</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="8.">8.<a class="anchor-link" href="#8.">&#182;</a></h3><p>Create a DataFrame <code>italian_wines</code> containing reviews of wines made in <code>Italy</code>. Hint: <code>reviews.country</code> equals what?</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">italian_wines</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Italy&#39;</span><span class="p">]</span>
+<span class="n">italian_wines</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>description</th>
+      <th>designation</th>
+      <th>points</th>
+      <th>price</th>
+      <th>province</th>
+      <th>region_1</th>
+      <th>region_2</th>
+      <th>taster_name</th>
+      <th>taster_twitter_handle</th>
+      <th>title</th>
+      <th>variety</th>
+      <th>winery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Italy</td>
+      <td>Aromas include tropical fruit, broom, brimston...</td>
+      <td>Vulkà Bianco</td>
+      <td>87</td>
+      <td>NaN</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Etna</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Nicosia 2013 Vulkà Bianco  (Etna)</td>
+      <td>White Blend</td>
+      <td>Nicosia</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Italy</td>
+      <td>Here's a bright, informal red that opens with ...</td>
+      <td>Belsito</td>
+      <td>87</td>
+      <td>16.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Vittoria</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Terre di Giurfo 2013 Belsito Frappato (Vittoria)</td>
+      <td>Frappato</td>
+      <td>Terre di Giurfo</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Italy</td>
+      <td>This is dominated by oak and oak-driven aromas...</td>
+      <td>Rosso</td>
+      <td>87</td>
+      <td>NaN</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Etna</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Masseria Setteporte 2012 Rosso  (Etna)</td>
+      <td>Nerello Mascalese</td>
+      <td>Masseria Setteporte</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Italy</td>
+      <td>Delicate aromas recall white flower and citrus...</td>
+      <td>Ficiligno</td>
+      <td>87</td>
+      <td>19.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Sicilia</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Baglio di Pianetto 2007 Ficiligno White (Sicilia)</td>
+      <td>White Blend</td>
+      <td>Baglio di Pianetto</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Italy</td>
+      <td>Aromas of prune, blackcurrant, toast and oak c...</td>
+      <td>Aynat</td>
+      <td>87</td>
+      <td>35.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Sicilia</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Canicattì 2009 Aynat Nero d'Avola (Sicilia)</td>
+      <td>Nero d'Avola</td>
+      <td>Canicattì</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>129929</th>
+      <td>Italy</td>
+      <td>This luminous sparkler has a sweet, fruit-forw...</td>
+      <td>NaN</td>
+      <td>91</td>
+      <td>38.0</td>
+      <td>Veneto</td>
+      <td>Prosecco Superiore di Cartizze</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Col Vetoraz Spumanti NV  Prosecco Superiore di...</td>
+      <td>Prosecco</td>
+      <td>Col Vetoraz Spumanti</td>
+    </tr>
+    <tr>
+      <th>129943</th>
+      <td>Italy</td>
+      <td>A blend of Nero d'Avola and Syrah, this convey...</td>
+      <td>Adènzia</td>
+      <td>90</td>
+      <td>29.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Sicilia</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Baglio del Cristo di Campobello 2012 Adènzia R...</td>
+      <td>Red Blend</td>
+      <td>Baglio del Cristo di Campobello</td>
+    </tr>
+    <tr>
+      <th>129947</th>
+      <td>Italy</td>
+      <td>A blend of 65% Cabernet Sauvignon, 30% Merlot ...</td>
+      <td>Symposio</td>
+      <td>90</td>
+      <td>20.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Terre Siciliane</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Feudo Principi di Butera 2012 Symposio Red (Te...</td>
+      <td>Red Blend</td>
+      <td>Feudo Principi di Butera</td>
+    </tr>
+    <tr>
+      <th>129961</th>
+      <td>Italy</td>
+      <td>Intense aromas of wild cherry, baking spice, t...</td>
+      <td>NaN</td>
+      <td>90</td>
+      <td>30.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Sicilia</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>COS 2013 Frappato (Sicilia)</td>
+      <td>Frappato</td>
+      <td>COS</td>
+    </tr>
+    <tr>
+      <th>129962</th>
+      <td>Italy</td>
+      <td>Blackberry, cassis, grilled herb and toasted a...</td>
+      <td>Sàgana Tenuta San Giacomo</td>
+      <td>90</td>
+      <td>40.0</td>
+      <td>Sicily &amp; Sardinia</td>
+      <td>Sicilia</td>
+      <td>NaN</td>
+      <td>Kerin O’Keefe</td>
+      <td>@kerinokeefe</td>
+      <td>Cusumano 2012 Sàgana Tenuta San Giacomo Nero d...</td>
+      <td>Nero d'Avola</td>
+      <td>Cusumano</td>
+    </tr>
+  </tbody>
+</table>
+<p>19540 rows × 13 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="9.">9.<a class="anchor-link" href="#9.">&#182;</a></h3><p>Create a DataFrame <code>top_oceania_wines</code> containing all reviews with at least 95 points (out of 100) for wines from Australia or New Zealand.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top_oceania_wines</span> <span class="o">=</span> <span class="n">reviews</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Australia&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;New Zealand&#39;</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">reviews</span><span class="p">[</span><span class="s1">&#39;points&#39;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">95</span><span class="p">)]</span>
+<span class="n">top_oceania_wines</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>description</th>
+      <th>designation</th>
+      <th>points</th>
+      <th>price</th>
+      <th>province</th>
+      <th>region_1</th>
+      <th>region_2</th>
+      <th>taster_name</th>
+      <th>taster_twitter_handle</th>
+      <th>title</th>
+      <th>variety</th>
+      <th>winery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>345</th>
+      <td>Australia</td>
+      <td>This wine contains some material over 100 year...</td>
+      <td>Rare</td>
+      <td>100</td>
+      <td>350.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Chambers Rosewood Vineyards NV Rare Muscat (Ru...</td>
+      <td>Muscat</td>
+      <td>Chambers Rosewood Vineyards</td>
+    </tr>
+    <tr>
+      <th>346</th>
+      <td>Australia</td>
+      <td>This deep brown wine smells like a damp, mossy...</td>
+      <td>Rare</td>
+      <td>98</td>
+      <td>350.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Chambers Rosewood Vineyards NV Rare Muscadelle...</td>
+      <td>Muscadelle</td>
+      <td>Chambers Rosewood Vineyards</td>
+    </tr>
+    <tr>
+      <th>348</th>
+      <td>Australia</td>
+      <td>Deep mahogany. Dried fig and black tea on the ...</td>
+      <td>Grand</td>
+      <td>97</td>
+      <td>100.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Chambers Rosewood Vineyards NV Grand Muscat (R...</td>
+      <td>Muscat</td>
+      <td>Chambers Rosewood Vineyards</td>
+    </tr>
+    <tr>
+      <th>349</th>
+      <td>Australia</td>
+      <td>RunRig is always complex, and the 2012 doesn't...</td>
+      <td>RunRig</td>
+      <td>97</td>
+      <td>225.0</td>
+      <td>South Australia</td>
+      <td>Barossa</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2012 RunRig Shiraz-Viognier (Barossa)</td>
+      <td>Shiraz-Viognier</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>356</th>
+      <td>Australia</td>
+      <td>Dusty, firm, powerful: just a few apt descript...</td>
+      <td>Georgia's Paddock</td>
+      <td>95</td>
+      <td>85.0</td>
+      <td>Victoria</td>
+      <td>Heathcote</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Jasper Hill 2013 Georgia's Paddock Shiraz (Hea...</td>
+      <td>Shiraz</td>
+      <td>Jasper Hill</td>
+    </tr>
+    <tr>
+      <th>360</th>
+      <td>Australia</td>
+      <td>Bacon and tapenade elements merge easily on th...</td>
+      <td>Descendant</td>
+      <td>95</td>
+      <td>125.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2012 Descendant Shiraz-Viognier (Baro...</td>
+      <td>Shiraz-Viognier</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>365</th>
+      <td>Australia</td>
+      <td>The Taylor family selected Clare Valley for it...</td>
+      <td>St. Andrews Single Vineyard Release</td>
+      <td>95</td>
+      <td>60.0</td>
+      <td>South Australia</td>
+      <td>Clare Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Wakefield 2013 St. Andrews Single Vineyard Rel...</td>
+      <td>Shiraz</td>
+      <td>Wakefield</td>
+    </tr>
+    <tr>
+      <th>14354</th>
+      <td>Australia</td>
+      <td>This wine's concentrated dark fruit shows in t...</td>
+      <td>Old Vine</td>
+      <td>95</td>
+      <td>60.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Kaesler 2006 Old Vine Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Kaesler</td>
+    </tr>
+    <tr>
+      <th>16538</th>
+      <td>Australia</td>
+      <td>Rich, dense and intense, this is a big, muscul...</td>
+      <td>The Family Tree</td>
+      <td>95</td>
+      <td>65.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Lambert 2013 The Family Tree Shiraz (Barossa V...</td>
+      <td>Shiraz</td>
+      <td>Lambert</td>
+    </tr>
+    <tr>
+      <th>28573</th>
+      <td>Australia</td>
+      <td>Astralis has become one of Australia's top col...</td>
+      <td>Astralis</td>
+      <td>95</td>
+      <td>350.0</td>
+      <td>South Australia</td>
+      <td>Clarendon</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Clarendon Hills 2005 Astralis Syrah (Clarendon)</td>
+      <td>Syrah</td>
+      <td>Clarendon Hills</td>
+    </tr>
+    <tr>
+      <th>34502</th>
+      <td>Australia</td>
+      <td>This prodigious wine showcases Barossa's abili...</td>
+      <td>The Relic</td>
+      <td>98</td>
+      <td>135.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Standish 2006 The Relic Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Standish</td>
+    </tr>
+    <tr>
+      <th>34506</th>
+      <td>Australia</td>
+      <td>If Standish's Relic is the feminine side of Sh...</td>
+      <td>The Standish Single Vineyard</td>
+      <td>96</td>
+      <td>135.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Standish 2005 The Standish Single Vineyard Shi...</td>
+      <td>Shiraz</td>
+      <td>Standish</td>
+    </tr>
+    <tr>
+      <th>38988</th>
+      <td>Australia</td>
+      <td>Penfolds Bin 707 has leapt in quality over the...</td>
+      <td>Bin 707</td>
+      <td>95</td>
+      <td>200.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2009 Bin 707 Cabernet Sauvignon (Sout...</td>
+      <td>Cabernet Sauvignon</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>39059</th>
+      <td>Australia</td>
+      <td>The Taylor family selected Clare Valley for it...</td>
+      <td>St. Andrews Single Vineyard Release</td>
+      <td>95</td>
+      <td>60.0</td>
+      <td>South Australia</td>
+      <td>Clare Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Wakefield 2013 St. Andrews Single Vineyard Rel...</td>
+      <td>Shiraz</td>
+      <td>Wakefield</td>
+    </tr>
+    <tr>
+      <th>39961</th>
+      <td>Australia</td>
+      <td>As unevolved as they are, the dense and multil...</td>
+      <td>Grange</td>
+      <td>96</td>
+      <td>185.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Penfolds 1996 Grange Shiraz (South Australia)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>39962</th>
+      <td>Australia</td>
+      <td>Seamless luxury from stem to stern, this ‘baby...</td>
+      <td>RWT</td>
+      <td>95</td>
+      <td>70.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Penfolds 1998 RWT Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>45809</th>
+      <td>Australia</td>
+      <td>The 2007 Astralis impresses for its combinatio...</td>
+      <td>Astralis</td>
+      <td>95</td>
+      <td>225.0</td>
+      <td>South Australia</td>
+      <td>Clarendon</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Clarendon Hills 2007 Astralis Syrah (Clarendon)</td>
+      <td>Syrah</td>
+      <td>Clarendon Hills</td>
+    </tr>
+    <tr>
+      <th>56953</th>
+      <td>Australia</td>
+      <td>This inky, embryonic wine deserves to be cella...</td>
+      <td>Grange</td>
+      <td>99</td>
+      <td>850.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2010 Grange Shiraz (South Australia)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>56956</th>
+      <td>Australia</td>
+      <td>You may have to scour the country to secure so...</td>
+      <td>Andelmonde</td>
+      <td>97</td>
+      <td>95.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Standish 2012 Andelmonde Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Standish</td>
+    </tr>
+    <tr>
+      <th>56957</th>
+      <td>Australia</td>
+      <td>Thorn Clarke has taken its Shiraz to a new lev...</td>
+      <td>Ron Thorn Single Vineyard</td>
+      <td>96</td>
+      <td>89.0</td>
+      <td>South Australia</td>
+      <td>Barossa</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Thorn Clarke 2012 Ron Thorn Single Vineyard Sh...</td>
+      <td>Shiraz</td>
+      <td>Thorn Clarke</td>
+    </tr>
+    <tr>
+      <th>56959</th>
+      <td>Australia</td>
+      <td>Is this the Yin to Grange's Yang? The wines ar...</td>
+      <td>Hill of Grace</td>
+      <td>96</td>
+      <td>820.0</td>
+      <td>South Australia</td>
+      <td>Eden Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Henschke 2010 Hill of Grace Shiraz (Eden Valley)</td>
+      <td>Shiraz</td>
+      <td>Henschke</td>
+    </tr>
+    <tr>
+      <th>59977</th>
+      <td>Australia</td>
+      <td>This is a top example of the classic Australia...</td>
+      <td>The Peake</td>
+      <td>96</td>
+      <td>150.0</td>
+      <td>South Australia</td>
+      <td>McLaren Vale</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Hickinbotham 2013 The Peake Cabernet-Shiraz (M...</td>
+      <td>Cabernet-Shiraz</td>
+      <td>Hickinbotham</td>
+    </tr>
+    <tr>
+      <th>59984</th>
+      <td>Australia</td>
+      <td>This is a throwback to those brash, flavor-exu...</td>
+      <td>One</td>
+      <td>95</td>
+      <td>95.0</td>
+      <td>South Australia</td>
+      <td>Langhorne Creek</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Heartland 2013 One Red (Langhorne Creek)</td>
+      <td>Red Blend</td>
+      <td>Heartland</td>
+    </tr>
+    <tr>
+      <th>67096</th>
+      <td>Australia</td>
+      <td>Just a tiny serving of this dark nectar will l...</td>
+      <td>Calliope Rare</td>
+      <td>98</td>
+      <td>86.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>R.L. Buller &amp; Son NV Calliope Rare Tokay (Ruth...</td>
+      <td>Tokay</td>
+      <td>R.L. Buller &amp; Son</td>
+    </tr>
+    <tr>
+      <th>67101</th>
+      <td>Australia</td>
+      <td>This Muscat is the color of dark coffee, with ...</td>
+      <td>Rare</td>
+      <td>95</td>
+      <td>300.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Chambers Rosewood Vineyards NV Rare Muscat (Ru...</td>
+      <td>Muscat</td>
+      <td>Chambers Rosewood Vineyards</td>
+    </tr>
+    <tr>
+      <th>76392</th>
+      <td>Australia</td>
+      <td>When the alcohol levels are reined in to appro...</td>
+      <td>Georgia's Paddock</td>
+      <td>95</td>
+      <td>85.0</td>
+      <td>Victoria</td>
+      <td>Heathcote</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Jasper Hill 2012 Georgia's Paddock Shiraz (Hea...</td>
+      <td>Shiraz</td>
+      <td>Jasper Hill</td>
+    </tr>
+    <tr>
+      <th>77028</th>
+      <td>Australia</td>
+      <td>This has all the size and weight you've come t...</td>
+      <td>Grange</td>
+      <td>98</td>
+      <td>850.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2008 Grange Shiraz (South Australia)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>77036</th>
+      <td>Australia</td>
+      <td>RWT (unromantically derived from “Red Wine Tri...</td>
+      <td>RWT</td>
+      <td>96</td>
+      <td>150.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2009 RWT Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>77037</th>
+      <td>Australia</td>
+      <td>Winemaker Dave Powell is no longer with Torbre...</td>
+      <td>RunRig</td>
+      <td>96</td>
+      <td>225.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2007 RunRig Shiraz-Viognier (Barossa ...</td>
+      <td>Shiraz-Viognier</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>77042</th>
+      <td>Australia</td>
+      <td>This is likely the most ageworthy Shiraz winem...</td>
+      <td>Eligo</td>
+      <td>95</td>
+      <td>100.0</td>
+      <td>South Australia</td>
+      <td>Barossa</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>John Duval Wines 2010 Eligo Shiraz (Barossa)</td>
+      <td>Shiraz</td>
+      <td>John Duval Wines</td>
+    </tr>
+    <tr>
+      <th>77044</th>
+      <td>Australia</td>
+      <td>The fruit for this offering comes from the Gre...</td>
+      <td>R Reserve</td>
+      <td>95</td>
+      <td>105.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Kilikanoon 2009 R Reserve Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Kilikanoon</td>
+    </tr>
+    <tr>
+      <th>77046</th>
+      <td>Australia</td>
+      <td>With aromas and flavors that range widely from...</td>
+      <td>The Factor</td>
+      <td>95</td>
+      <td>125.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2007 The Factor Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>83357</th>
+      <td>Australia</td>
+      <td>A throwback to the monster Shiraz style of old...</td>
+      <td>Grange</td>
+      <td>96</td>
+      <td>500.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2004 Grange Shiraz (South Australia)</td>
+      <td>Shiraz</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>84815</th>
+      <td>Australia</td>
+      <td>The Factor is always one of Torbreck's biggest...</td>
+      <td>The Factor</td>
+      <td>95</td>
+      <td>125.0</td>
+      <td>South Australia</td>
+      <td>Barossa</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2012 The Factor Shiraz (Barossa)</td>
+      <td>Shiraz</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>84816</th>
+      <td>Australia</td>
+      <td>Nashwauk is Kaesler's McLaren Vale project, fi...</td>
+      <td>Beacon</td>
+      <td>95</td>
+      <td>145.0</td>
+      <td>South Australia</td>
+      <td>McLaren Vale</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Nashwauk 2010 Beacon Shiraz (McLaren Vale)</td>
+      <td>Shiraz</td>
+      <td>Nashwauk</td>
+    </tr>
+    <tr>
+      <th>87128</th>
+      <td>Australia</td>
+      <td>This full-bodied, muscular Shiraz is built for...</td>
+      <td>Amery Vineyard Block 6</td>
+      <td>96</td>
+      <td>120.0</td>
+      <td>South Australia</td>
+      <td>McLaren Vale</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Kay Brothers 2012 Amery Vineyard Block 6 Shira...</td>
+      <td>Shiraz</td>
+      <td>Kay Brothers</td>
+    </tr>
+    <tr>
+      <th>87137</th>
+      <td>Australia</td>
+      <td>Perhaps the best young wine I've tasted from M...</td>
+      <td>NaN</td>
+      <td>95</td>
+      <td>84.0</td>
+      <td>Western Australia</td>
+      <td>Margaret River</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Moss Wood 2011 Cabernet Sauvignon (Margaret Ri...</td>
+      <td>Cabernet Sauvignon</td>
+      <td>Moss Wood</td>
+    </tr>
+    <tr>
+      <th>87143</th>
+      <td>Australia</td>
+      <td>This is wonderfully complex and aromatic, with...</td>
+      <td>St. Andrews Single Vineyard Release</td>
+      <td>95</td>
+      <td>60.0</td>
+      <td>South Australia</td>
+      <td>Clare Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Wakefield 2012 St. Andrews Single Vineyard Rel...</td>
+      <td>Shiraz</td>
+      <td>Wakefield</td>
+    </tr>
+    <tr>
+      <th>91851</th>
+      <td>New Zealand</td>
+      <td>This full-bodied, richly tannic wine delivers....</td>
+      <td>Homage</td>
+      <td>95</td>
+      <td>100.0</td>
+      <td>Hawke's Bay</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Trinity Hill 2013 Homage Syrah (Hawke's Bay)</td>
+      <td>Syrah</td>
+      <td>Trinity Hill</td>
+    </tr>
+    <tr>
+      <th>98386</th>
+      <td>Australia</td>
+      <td>One of the more approachable of the d'Arenberg...</td>
+      <td>Little Venice Single Vineyard</td>
+      <td>95</td>
+      <td>85.0</td>
+      <td>South Australia</td>
+      <td>McLaren Vale</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>D'Arenberg 2010 Little Venice Single Vineyard ...</td>
+      <td>Shiraz</td>
+      <td>D'Arenberg</td>
+    </tr>
+    <tr>
+      <th>99318</th>
+      <td>Australia</td>
+      <td>From vines planted in 1912, this has been an i...</td>
+      <td>Mount Edelstone Vineyard</td>
+      <td>95</td>
+      <td>200.0</td>
+      <td>South Australia</td>
+      <td>Eden Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Henschke 2014 Mount Edelstone Vineyard Shiraz ...</td>
+      <td>Shiraz</td>
+      <td>Henschke</td>
+    </tr>
+    <tr>
+      <th>99330</th>
+      <td>Australia</td>
+      <td>This Cabernet equivalent to Grange has explode...</td>
+      <td>Bin 707</td>
+      <td>95</td>
+      <td>500.0</td>
+      <td>South Australia</td>
+      <td>South Australia</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Penfolds 2014 Bin 707 Cabernet Sauvignon (Sout...</td>
+      <td>Cabernet Sauvignon</td>
+      <td>Penfolds</td>
+    </tr>
+    <tr>
+      <th>99340</th>
+      <td>Australia</td>
+      <td>This rich, opulent wine carries its massive oa...</td>
+      <td>Les Amis</td>
+      <td>95</td>
+      <td>185.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2013 Les Amis Grenache (Barossa Valley)</td>
+      <td>Grenache</td>
+      <td>Torbreck</td>
+    </tr>
+    <tr>
+      <th>109427</th>
+      <td>Australia</td>
+      <td>This wine is dark brown in hue with a greenish...</td>
+      <td>Rare</td>
+      <td>99</td>
+      <td>300.0</td>
+      <td>Victoria</td>
+      <td>Rutherglen</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Chambers Rosewood Vineyards NV Rare Muscadelle...</td>
+      <td>Muscadelle</td>
+      <td>Chambers Rosewood Vineyards</td>
+    </tr>
+    <tr>
+      <th>109434</th>
+      <td>Australia</td>
+      <td>D'Arenberg's lineup of single-vineyard Shiraze...</td>
+      <td>The Swinging Malaysian Single Vineyard</td>
+      <td>96</td>
+      <td>85.0</td>
+      <td>South Australia</td>
+      <td>McLaren Vale</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>D'Arenberg 2010 The Swinging Malaysian Single ...</td>
+      <td>Shiraz</td>
+      <td>D'Arenberg</td>
+    </tr>
+    <tr>
+      <th>122421</th>
+      <td>Australia</td>
+      <td>Despite this wine's weight and richness, it re...</td>
+      <td>Amon-Ra Unfiltered</td>
+      <td>96</td>
+      <td>110.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Glaetzer 2010 Amon-Ra Unfiltered Shiraz (Baros...</td>
+      <td>Shiraz</td>
+      <td>Glaetzer</td>
+    </tr>
+    <tr>
+      <th>122430</th>
+      <td>Australia</td>
+      <td>These blends are traditional in Australia—they...</td>
+      <td>Anaperenna</td>
+      <td>95</td>
+      <td>80.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Glaetzer 2010 Anaperenna Shiraz-Cabernet Sauvi...</td>
+      <td>Shiraz-Cabernet Sauvignon</td>
+      <td>Glaetzer</td>
+    </tr>
+    <tr>
+      <th>122507</th>
+      <td>New Zealand</td>
+      <td>This blend of Cabernet Sauvignon (62.5%), Merl...</td>
+      <td>SQM Gimblett Gravels Cabernets/Merlot</td>
+      <td>95</td>
+      <td>79.0</td>
+      <td>Hawke's Bay</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Squawking Magpie 2014 SQM Gimblett Gravels Cab...</td>
+      <td>Bordeaux-style Red Blend</td>
+      <td>Squawking Magpie</td>
+    </tr>
+    <tr>
+      <th>122939</th>
+      <td>Australia</td>
+      <td>Full-bodied and plush yet vibrant and imbued w...</td>
+      <td>The Factor</td>
+      <td>98</td>
+      <td>125.0</td>
+      <td>South Australia</td>
+      <td>Barossa Valley</td>
+      <td>NaN</td>
+      <td>Joe Czerwinski</td>
+      <td>@JoeCz</td>
+      <td>Torbreck 2013 The Factor Shiraz (Barossa Valley)</td>
+      <td>Shiraz</td>
+      <td>Torbreck</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
